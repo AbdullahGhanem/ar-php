@@ -167,8 +167,8 @@ class Arabic
         $this->myFile  = $library;
         //$this->myClass = '' . $library; Nasser
        // $class         = '' . $library; Nasser
-        $this->myClass = '\Johntaa\\' . $library ;
-        $class         = '\Johntaa\\' . $library;
+        $this->myClass = '\Johntaa\\Arabic\\' . $library ;
+        $class         = '\Johntaa\\Arabic\\' . $library;
 
         if (!$this->_useAutoload) {
 			 
