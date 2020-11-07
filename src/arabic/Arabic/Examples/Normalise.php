@@ -16,7 +16,7 @@
  * Example of Arabic Normalise Examples
  *
  * @category  I18N
- * @package   I18NArabic
+ * @package   Arabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -28,7 +28,7 @@ error_reporting(E_STRICT);
 $time_start = microtime(true);
 
 require '../../Arabic.php';
-$Arabic = new I18NArabic('Normalise');
+$Arabic = new Arabic('Normalise');
 
 echo <<<END
 <p>قال الشاعر حافظ إبراهيم على لسان اللغة العربية</p>
@@ -74,7 +74,7 @@ echo '</table>';
 $code = <<< ENDALL
 <?php
 require '../../Arabic.php';
-\$Arabic = new I18NArabic('Normalise');
+\$Arabic = new Arabic('Normalise');
 
 echo <<<END
 <p>قال الشاعر حافظ إبراهيم على لسان اللغة العربية</p>
@@ -129,7 +129,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18NArabic/_Arabic---Normalise.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/Arabic/_Arabic---Normalise.php.html" target="_blank">Related Class Documentation</a>
 
 </div>
 </body>

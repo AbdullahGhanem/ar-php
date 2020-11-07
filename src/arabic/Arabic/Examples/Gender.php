@@ -16,7 +16,7 @@
  * Example of Arabic Gender Guesser
  *
  * @category  I18N
- * @package   I18NArabic
+ * @package   Arabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -28,7 +28,7 @@ error_reporting(E_STRICT);
 $time_start = microtime(true);
 
 require '../../Arabic.php';
-$Arabic = new I18NArabic('Gender');
+$Arabic = new Arabic('Gender');
 
 $names = array('أحمد بشتو','أحمد منصور','الحبيب الغريبي','المعز بو لحية',
                   'توفيق طه','جلنار موسى','جمال  ريان','جمانة نمور',
@@ -81,7 +81,7 @@ echo '</table></center>';
 $code = <<< ENDALL
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18NArabic('Gender');
+    \$Arabic = new Arabic('Gender');
 
     \$names = array('أحمد بشتو','أحمد منصور','الحبيب الغريبي','المعز بو لحية',
                       'توفيق طه','جلنار موسى','جمال  ريان','جمانة نمور',
@@ -145,7 +145,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18NArabic/_Arabic---Gender.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/Arabic/_Arabic---Gender.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>

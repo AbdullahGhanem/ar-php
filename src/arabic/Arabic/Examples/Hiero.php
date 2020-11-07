@@ -3,7 +3,7 @@
  * Example of render Hiero language transliteration
  *
  * @category  I18N
- * @package   I18NArabic
+ * @package   Arabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -16,7 +16,7 @@ error_reporting(E_STRICT);
 (!empty($_GET['w'])) ? $word = $_GET['w'] : $word='Khaled Shamaa';
 
 require '../../Arabic.php';
-$x = new I18NArabic('Hiero');
+$x = new Arabic('Hiero');
 
 $im = $x->str2graph($word);
 

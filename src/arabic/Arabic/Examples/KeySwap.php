@@ -16,7 +16,7 @@
  * Example of Convert keyboard language programmatically (English - Arabic)
  *
  * @category  I18N
- * @package   I18NArabic
+ * @package   Arabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -28,7 +28,7 @@ error_reporting(E_STRICT);
 $time_start = microtime(true);
 
 require '../../Arabic.php';
-$Arabic = new I18NArabic('KeySwap');
+$Arabic = new Arabic('KeySwap');
 
 $str = "Hpf lk hgkhs hglj'vtdkK Hpf hg`dk dldg,k f;gdjil Ygn
 ,p]hkdm hgHl,v tb drt,k ljv]]dk fdk krdqdk>";
@@ -44,7 +44,7 @@ echo "<u><i>After:</i></u><br />$text<br /><br /><b>جبران خليل جبرا
 $code = <<< END
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18NArabic('KeySwap');
+    \$Arabic = new Arabic('KeySwap');
 
     \$str = "Hpf lk hgkhs hglj'vtdkK Hpf hg`dk dldg,k f;gdjil Ygn
     ,p]hkdm hgHl,v tb drt,k ljv]]dk fdk krdqdk>";
@@ -76,7 +76,7 @@ highlight_string($code);
 $code = <<< END
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18NArabic('KeySwap');
+    \$Arabic = new Arabic('KeySwap');
     
     \$str = "ِىغ هىفثممهلثىف بخخم ؤشى ةشنث فاهىلس لاهللثق ةخقث ؤخةحمثء شىي ةخقث رهخمثىفز ÷ف فشنثس ش فخعؤا خب لثىهعس شىي ش مخف خب ؤخعقشلث فخ ةخرث هى فاث خححخسهفث يهقثؤفهخىز";
     
@@ -103,7 +103,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18NArabic/_Arabic---KeySwap.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/Arabic/_Arabic---KeySwap.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>

@@ -3,7 +3,7 @@
  * Example of GD implementation for Arabic glyphs Class 
  *
  * @category  I18N
- * @package   I18NArabic
+ * @package   Arabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -36,7 +36,7 @@ imagettftext($im, 20, 0, 10, 50, $blue, $font, 'UTF-8:');
 imagettftext($im, 20, 0, 250, 50, $black, $font, $text);
 
 require '../../Arabic.php';
-$Arabic = new I18NArabic('Glyphs');
+$Arabic = new Arabic('Glyphs');
 
 $text = 'بسم الله الرحمن الرحيم';
 $text = $Arabic->utf8Glyphs($text);

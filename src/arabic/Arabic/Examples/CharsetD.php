@@ -16,7 +16,7 @@
  * Example of Detect Arabic String Character Set
  *
  * @category  I18N
- * @package   I18NArabic
+ * @package   Arabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -30,7 +30,7 @@ $time_start = microtime(true);
 $text = 'ÈÓã Çááå ÇáÑÍãä ÇáÑÍíã';
 
 require '../../Arabic.php';
-$Arabic = new I18NArabic('CharsetD');
+$Arabic = new Arabic('CharsetD');
 
 $charset = $Arabic->getCharset($text);
 
@@ -48,7 +48,7 @@ $code = <<< END
     \$text = 'ÈÓã Çááå ÇáÑÍãä ÇáÑÍíã';
 
     require '../../Arabic.php';
-    \$Arabic = new I18NArabic('CharsetD');
+    \$Arabic = new Arabic('CharsetD');
     
     \$charset = \$Arabic->getCharset(\$text);
     
@@ -74,7 +74,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18NArabic/_Arabic---CharsetD.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/Arabic/_Arabic---CharsetD.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>

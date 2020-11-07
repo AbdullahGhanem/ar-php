@@ -3,7 +3,7 @@
  * Example of VRML implementation for Arabic glyphs Class
  *
  * @category  I18N
- * @package   I18NArabic
+ * @package   Arabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -36,7 +36,7 @@ Group {
 
 <?php
 require '../../Arabic.php';
-$Arabic = new I18NArabic('Glyphs');
+$Arabic = new Arabic('Glyphs');
 $text = "خَالِد الشَّمْعَة";
 $text = $Arabic->utf8Glyphs($text);
 ?>

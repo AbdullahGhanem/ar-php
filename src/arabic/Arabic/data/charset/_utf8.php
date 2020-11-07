@@ -3,7 +3,7 @@
  * A map of Arabic characters in the UTF-8 charset
  *
  * @category  I18N
- * @package   I18NArabic
+ * @package   Arabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2011 Khaled Al-Sham'aa
  *

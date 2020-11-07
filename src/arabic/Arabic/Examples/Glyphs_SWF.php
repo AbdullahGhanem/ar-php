@@ -3,7 +3,7 @@
  * Example of SWF implementation for Arabic glyphs Class
  *
  * @category  I18N
- * @package   I18NArabic
+ * @package   Arabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -29,7 +29,7 @@ no longer bundled with PHP as of PHP 5.3.0</p>
 }
 
 require '../../Arabic.php';
-$Arabic = new I18NArabic('Glyphs');
+$Arabic = new Arabic('Glyphs');
 
 $text_before = 'اللغة العربية';
 $text_after = $Arabic->utf8Glyphs($text_before);

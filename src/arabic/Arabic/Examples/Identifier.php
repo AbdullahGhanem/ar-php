@@ -16,7 +16,7 @@
  * Example of Identify Arabic Text Segments
  *
  * @category  I18N
- * @package   I18NArabic
+ * @package   Arabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -81,7 +81,7 @@ just as well with respect and communication.  The Internet Internationalization
 END;
 
 require '../../Arabic.php';
-$Arabic = new I18NArabic('Identifier');
+$Arabic = new Arabic('Identifier');
 
 $pos = Identifier::identify($text);
 
@@ -104,7 +104,7 @@ for ($i=0; $i<$total; $i+=2) {
 $code = <<< END
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18NArabic('Identifier');
+    \$Arabic = new Arabic('Identifier');
 
     \$pos = Identifier::identify(\$text);
 
@@ -137,7 +137,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18NArabic/_Arabic---Identifier.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/Arabic/_Arabic---Identifier.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>

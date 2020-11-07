@@ -17,7 +17,7 @@
  * Example of Arabic Text Compressor
  *
  * @category  I18N
- * @package   I18NArabic
+ * @package   Arabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -29,7 +29,7 @@ error_reporting(E_STRICT);
 $time_start = microtime(true);
 
 require '../../Arabic.php';
-$Arabic = new I18NArabic('CompressStr');
+$Arabic = new Arabic('CompressStr');
 
 $Arabic->setInputCharset('windows-1256');
 
@@ -73,7 +73,7 @@ echo '<div dir="rtl" align="justify">'.nl2br($str).'</div>';
 $code = <<< END
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18NArabic('CompressStr');
+    \$Arabic = new Arabic('CompressStr');
 
     \$Arabic->setInputCharset('windows-1256');
 
@@ -127,7 +127,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18NArabic/_Arabic---CompressStr.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/Arabic/_Arabic---CompressStr.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>

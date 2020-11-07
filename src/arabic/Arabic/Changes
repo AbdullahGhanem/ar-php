@@ -33,7 +33,7 @@ What's new in ArPHP 3.6.0 (release date: Jan 20, 2013)
 * Reduce the size of the "Salat" sub class by 20%, removed deprecated "getPrayTime" method, 
   that method name is now just an alias of the new "getPrayTime2" method.
 
-* Drop the "pregPattern" method from the main "I18NArabic" class, it is too basic to 
+* Drop the "pregPattern" method from the main "Arabic" class, it is too basic to 
   handle it in a standalone method, instead of that users may consult this FAQ page: 
   (http://www.ar-php.org/faq-php-arabic.html#regexp).
 
@@ -65,7 +65,7 @@ What's new in ArPHP 3.5.0 (release date: Sep 1, 2012)
   to provide users more flexibility in handle it.
 
 * Tag HTML content if it is belong to a forum using the new "isForum" method in the 
-  main "I18NArabic" class, currently it recognize only vBulletin.
+  main "Arabic" class, currently it recognize only vBulletin.
   
 * Fix the transliteration issue of ال precedes a word beginning with one of the
   "sun letters", and issue of ة when it used in combined words to Romanized as 
@@ -106,11 +106,11 @@ What's new in ArPHP 3.0.0 beta (release date: Feb 5, 2012)
 * Add new method "int2indic" to the "Numbers" sub class to represent integer numbers 
   in Arabic-Indic digits using HTML entities.
 
-* Add new method "header" to the main "I18NArabic" class to set/send output charset in 
+* Add new method "header" to the main "Arabic" class to set/send output charset in 
   several output media in a proper way (this includes http, html, text_email, 
   html_email, mysql, mysqli, and pdo).
 
-* Add new method "getBrowserLang" to the main "I18NArabic" class to detect chosen/default 
+* Add new method "getBrowserLang" to the main "Arabic" class to detect chosen/default 
   browser language using ISO 639-1 2-letter codes (i.e ar, en, fr, ...)
 
 * Enhance "Normalise" sub class by import set of Mr. Taha Zerrouki <taha.zerrouki@gmail.com> 

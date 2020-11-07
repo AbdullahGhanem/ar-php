@@ -21,7 +21,7 @@
  * Example of Arabic Auto Summarize Class
  *
  * @category  I18N
- * @package   I18NArabic
+ * @package   Arabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -33,7 +33,7 @@ error_reporting(E_STRICT);
 $time_start = microtime(true);
 
 require '../../Arabic.php';
-$Arabic = new I18NArabic('AutoSummarize');
+$Arabic = new Arabic('AutoSummarize');
 
 $rate     = 25;
 $title    = 'أضخم تجربة علمية لدراسة بنية المادة المعتمة بمصادم الهدرونات الكبير';
@@ -97,7 +97,7 @@ END;
 $code = <<< ENDALL
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18NArabic('AutoSummarize');
+    \$Arabic = new Arabic('AutoSummarize');
     
     \$rate     = 25;
     \$title    = 'أضخم تجربة علمية لدراسة بنية المادة المعتمة بمصادم الهدرونات الكبير';
@@ -172,7 +172,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18NArabic/_Arabic---AutoSummarize.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/Arabic/_Arabic---AutoSummarize.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>

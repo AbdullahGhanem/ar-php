@@ -21,7 +21,7 @@
  * Example of Tagging Arabic Text
  *
  * @category  I18N
- * @package   I18NArabic
+ * @package   Arabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -33,7 +33,7 @@ error_reporting(E_STRICT);
 $time_start = microtime(true);
 
 require '../../Arabic.php';
-$Arabic = new I18NArabic('WordTag');
+$Arabic = new Arabic('WordTag');
 
 $str = 'وحسب إحصائية لوزارة الدفاع الأميركية ما زال نحو 375 معتقلا يقبعون في
 غوانتانامو في إطار ما يسمى " الحرب على الإرهاب "، منهم كثيرون محتجزون منذ
@@ -69,7 +69,7 @@ echo '</div>';
 $code = <<< END
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18NArabic('WordTag');
+    \$Arabic = new Arabic('WordTag');
     
     \$str = 'وحسب إحصائية لوزارة الدفاع الأميركية ما زال نحو 375 معتقلا يقبعون في
     غوانتانامو في إطار ما يسمى " الحرب على الإرهاب "، منهم كثيرون محتجزون منذ
@@ -116,7 +116,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18NArabic/_Arabic---WordTag.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/Arabic/_Arabic---WordTag.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>

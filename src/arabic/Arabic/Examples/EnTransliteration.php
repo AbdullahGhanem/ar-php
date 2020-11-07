@@ -15,7 +15,7 @@
  * Example of Arabic-English Transliteration
  *
  * @category  I18N
- * @package   I18NArabic
+ * @package   Arabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -27,7 +27,7 @@ error_reporting(E_STRICT);
 $time_start = microtime(true);
 
 require '../../Arabic.php';
-$Arabic = new I18NArabic('Transliteration');
+$Arabic = new Arabic('Transliteration');
 
 $ar_terms = array('خالِد الشَمعَة', 'جُبران خَليل جُبران', 'كاظِم الساهِر',
     'ماجِدَة الرُومِي، نِزار قَبَّانِي', 'سُوق الحَمِيدِيَّة؟', 'مَغارَة
@@ -78,7 +78,7 @@ $code = <<< ENDALL
 <?php
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18NArabic('Transliteration');
+    \$Arabic = new Arabic('Transliteration');
 
     \$ar_terms = array('خالِد الشَمعَة', 'جُبران خَليل جُبران', 'كاظِم الساهِر',
         'ماجِدَة الرُومِي، نِزار قَبَّانِي', 'سُوق الحَمِيدِيَّة؟', 'مَغارَة
@@ -138,7 +138,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18NArabic/_Arabic---Transliteration.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/Arabic/_Arabic---Transliteration.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>
