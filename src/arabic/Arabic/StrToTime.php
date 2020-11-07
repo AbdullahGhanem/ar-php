@@ -1,104 +1,8 @@
-<?php  namespace Johntaa\Arabic;
-/**
- * ----------------------------------------------------------------------
- *  
- * Copyright (c) 2006-2013 Khaled Al-Sham'aa.
- *  
- * http://www.ar-php.org
- *  
- * PHP Version 5 
- *  
- * ----------------------------------------------------------------------
- *  
- * LICENSE
- *
- * This program is open source product; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public License (LGPL)
- * as published by the Free Software Foundation; either version 3
- * of the License, or (at your option) any later version.
- *  
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Lesser General Public License for more details.
- *  
- * You should have received a copy of the GNU Lesser General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/lgpl.txt>.
- *  
- * ----------------------------------------------------------------------
- *  
- * Class Name: Arabic StrToTime Class
- *  
- * Filename: StrToTime.php
- *  
- * Original  Author(s): Khaled Al-Sham'aa <khaled@ar-php.org>
- *  
- * Purpose:  Parse about any Arabic textual datetime description into 
- *           a Unix timestamp
- *  
- * ----------------------------------------------------------------------
- *  
- * Arabic StrToTime Class
- *
- * PHP class to parse about any Arabic textual datetime description into 
- * a Unix timestamp.
- * 
- * The function expects to be given a string containing an Arabic date format 
- * and will try to parse that format into a Unix timestamp (the number of seconds 
- * since January 1 1970 00:00:00 GMT), relative to the timestamp given in now, or 
- * the current time if none is supplied.
- *          
- * Example:
- * <code>
- *     date_default_timezone_set('UTC');
- *     $time = time();
- * 
- *     echo date('l dS F Y', $time);
- *     echo '<br /><br />';
- * 
- *     include('./I18N/Arabic.php');
- *     $obj = new I18NArabic('StrToTime');
- * 
- *     $int  = $obj->strtotime($str, $time);
- *     $date = date('l dS F Y', $int);
- *     echo "<b><font color=#FFFF00>Arabic String:</font></b> $str<br />";
- *     echo "<b><font color=#FFFF00>Unix Timestamp:</font></b> $int<br />";
- *     echo "<b><font color=#FFFF00>Formated Date:</font></b> $date<br />";    
- * </code>
- *          
- * @category  I18N 
- * @package   I18NArabic
- * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
- * @copyright 2006-2013 Khaled Al-Sham'aa
- *    
- * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
- * @link      http://www.ar-php.org 
- */
+<?php 
 
-// New in PHP V5.3: Namespaces
-// namespace I18N\Arabic;
-// 
-// $obj = new I18N\Arabic\StrToTime();
-// 
-// use I18N\Arabic;
-// $obj = new Arabic\StrToTime();
-//
-// use I18N\Arabic\StrToTime as StrToTime;
-// $obj = new StrToTime();
+namespace Johntaa\Arabic;
 
-/**
- * This PHP class parse about any Arabic textual datetime description into a 
- * Unix timestamp
- *  
- * @category  I18N 
- * @package   I18NArabic
- * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
- * @copyright 2006-2013 Khaled Al-Sham'aa
- *    
- * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
- * @link      http://www.ar-php.org 
- */ 
-class I18NArabic_StrToTime
+class StrToTime
 {
     private static $_hj = array();
 
@@ -145,7 +49,7 @@ class I18NArabic_StrToTime
                 preg_match('/.*(\d{1,2}).*(\d{4}).*/', $text, $matches);
 
                 include dirname(__FILE__).'/Mktime.php';
-                $temp = new I18NArabic_Mktime();
+                $temp = new Mktime();
                 $fix  = $temp->mktimeCorrection($i+1, $matches[2]); 
                 $int  = $temp->mktime(0, 0, 0, $i+1, $matches[1], $matches[2], $fix);
                 $temp = null;

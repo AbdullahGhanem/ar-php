@@ -1,81 +1,7 @@
 <?php   
 
 namespace Johntaa;
-
-/**
- * ----------------------------------------------------------------------
- *  
- * Copyright (c) 2006-2013 Khaled Al-Shamaa.
- *  
- * http://www.ar-php.org
- *  
- * PHP Version 5 
- *  
- * ----------------------------------------------------------------------
- *  
- * LICENSE
- *
- * This program is open source product; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public License (LGPL)
- * as published by the Free Software Foundation; either version 3
- * of the License, or (at your option) any later version.
- *  
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Lesser General Public License for more details.
- *  
- * You should have received a copy of the GNU Lesser General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/lgpl.txt>.
- *  
- * ----------------------------------------------------------------------
- *  
- * Class Name: PHP and Arabic Language
- *  
- * Filename:   Arabic.php
- *  
- * Original    Author(s): Khaled Al-Sham'aa <khaled@ar-php.org>
- *  
- * Purpose:    Set of PHP classes developed to enhance Arabic web 
- *             applications by providing set of tools includes stem-based searching, 
- *             translitiration, soundex, Hijri calendar, charset detection and
- *             converter, spell numbers, keyboard language, Muslim prayer time, 
- *             auto-summarization, and more...
- *              
- * ----------------------------------------------------------------------
- *
- * @desc   Set of PHP classes developed to enhance Arabic web
- *         applications by providing set of tools includes stem-based searching, 
- *         translitiration, soundex, Hijri calendar, charset detection and
- *         converter, spell numbers, keyboard language, Muslim prayer time, 
- *         auto-summarization, and more...
- *          
- * @category  I18N 
- * @package   I18NArabic
- * @author    Khaled Al-Shamaa <khaled@ar-php.org>
- * @copyright 2006-2013 Khaled Al-Shamaa
- *    
- * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
- * @version   3.6.0 released in Jan 20, 2013
- * @link      http://www.ar-php.org
- */
-
-// New in PHP V5.3: Namespaces
-// namespace I18N\Arabic;
-
-// error_reporting(E_STRICT);
-
-/**
- * Core PHP and Arabic language class
- *  
- * @category  I18N 
- * @package   I18NArabic
- * @author    Khaled Al-Shamaa <khaled@ar-php.org>
- * @copyright 2006-2013 Khaled Al-Shamaa
- *    
- * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
- * @link      http://www.ar-php.org
- */  
+ 
 class I18NArabic
 {
     private $_inputCharset  = 'utf-8';
@@ -239,10 +165,10 @@ class I18NArabic
         }
 
         $this->myFile  = $library;
-        //$this->myClass = 'I18NArabic_' . $library; Nasser
-       // $class         = 'I18NArabic_' . $library; Nasser
-        $this->myClass = '\Johntaa\Arabic\I18NArabic_' . $library ;
-        $class         = '\Johntaa\Arabic\I18NArabic_' . $library;
+        //$this->myClass = '' . $library; Nasser
+       // $class         = '' . $library; Nasser
+        $this->myClass = '\Johntaa\Arabic\' . $library ;
+        $class         = '\Johntaa\Arabic\' . $library;
 
         if (!$this->_useAutoload) {
 			 
@@ -423,7 +349,7 @@ class I18NArabic
             if ($convStr == '' && $str != '') {
                 include self::getClassFile('CharsetC');
 
-                $c = I18NArabic_CharsetC::singleton();
+                $c = CharsetC::singleton();
                 
                 if ($inputCharset == 'cp1256') {
                     $convStr = $c->win2utf($str);

@@ -2,8 +2,7 @@
 
 namespace Johntaa\Arabic;
 
-
-class I18NArabic_Soundex
+class Soundex
 {
     private $_asoundexCode    = array();
     private $_aphonixCode     = array();

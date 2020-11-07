@@ -2,7 +2,7 @@
 
 namespace Johntaa\Arabic;
  
-class I18NArabic_Salat
+class Salat
 {
     /**
      * السنة
