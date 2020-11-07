@@ -16,7 +16,7 @@
  * Example of parse about any Arabic textual datetime description into a Unix timestamp
  *
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -34,7 +34,7 @@ echo date('l dS F Y', $time);
 echo '<br /><br />';
 
 require '../../Arabic.php';
-$Arabic = new I18N_Arabic('StrToTime');
+$Arabic = new I18NArabic('StrToTime');
 
 $str  = 'الخميس القادم';
 $int  = $Arabic->strtotime($str, $time);
@@ -84,7 +84,7 @@ $code = <<< END
     echo '<br /><br />';
 
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('StrToTime');
+    \$Arabic = new I18NArabic('StrToTime');
 
     \$str  = 'الخميس القادم';
     \$int  = \$Arabic->strtotime(\$str, \$time);
@@ -139,7 +139,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18N_Arabic/_Arabic---StrToTime.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/I18NArabic/_Arabic---StrToTime.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>

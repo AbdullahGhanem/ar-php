@@ -17,7 +17,7 @@
  * Example of MakeTime for Arabic/Islamic Higri Calendar
  *
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -31,7 +31,7 @@ $time_start = microtime(true);
 date_default_timezone_set('UTC');
 
 require '../../Arabic.php';
-$Arabic = new I18N_Arabic('Mktime');
+$Arabic = new I18NArabic('Mktime');
 
 $correction = $Arabic->mktimeCorrection(9, 1429);
 $time = $Arabic->mktime(0, 0, 0, 9, 1, 1429, $correction);
@@ -53,7 +53,7 @@ $code = <<< END
     date_default_timezone_set('UTC');
 
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Mktime');
+    \$Arabic = new I18NArabic('Mktime');
 
     \$correction = \$Arabic->mktimeCorrection(9, 1429);
     \$time = \$Arabic->mktime(0, 0, 0, 9, 1, 1429, \$correction);    
@@ -83,7 +83,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18N_Arabic/_Arabic---Mktime.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/I18NArabic/_Arabic---Mktime.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>

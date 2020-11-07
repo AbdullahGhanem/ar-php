@@ -3,7 +3,7 @@
  * Example of PDF implementation for Arabic glyphs Class
  *
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -33,7 +33,7 @@ $pdf->AddFont('ae_AlHor', '', 'ae_AlHor.php');
 $pdf->AddPage();
 
 require '../../Arabic.php';
-$Arabic = new I18N_Arabic('Glyphs');
+$Arabic = new I18NArabic('Glyphs');
 
 $text = "\n".'العنوان هو "AJAX era!" باللغة الإنجليزية';
 $text .= "\n\n".'في حقيقة الأمر، لقد سبق لشركة Microsoft ذاتها التعامل مع تقنية Ajax هذه منذ أواخر تسعينات القرن الماضي, لا بل أنها لا تزال تستخدم تلك التقنية في تعزيز مقدرة برنامجها الشهير Outlook للبريد الإلكتروني. وعلى الرغم من كون تقنية Ajax تقنية قديمة العهد نسبيا، إلا أنها لم تلق (حين ظهورها أول مرة) الكثير من الاهتمام، إلا أن الفضل يعود إلى شركة Google في نفض الغبار عنها ولإعادة إكتشافها من جديد، وذلك من خلال طائفة من تطبيقاتها الجديدة والتي يقع على رأسها كل من غوغل Maps إضافة إلى مخدم البريد الإلكتروني Gmail واللذين شكلا فعلا علامة فارقة في عالم الويب وإشارة واضحة إلى ما ستؤول إليه تطبيقات الويب في المستقبل القريب. فهل أعجبتك الفكرة؟ سوريا، حلب في 13 أيار 2007 مـ';

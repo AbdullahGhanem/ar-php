@@ -59,7 +59,7 @@
  * Example:
  * <code>
  *     include('./I18N/Arabic.php');
- *     $obj = new I18N_Arabic('Hiero');
+ *     $obj = new I18NArabic('Hiero');
  * 
  *     $word = $_GET['w'];
  *     $im   = $obj->str2hiero($word);
@@ -70,7 +70,7 @@
  * </code>
  *             
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
@@ -93,14 +93,14 @@
  * Translate English word into Hieroglyphics
  *  
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
  * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
  * @link      http://www.ar-php.org 
  */ 
-class I18N_Arabic_Hiero
+class I18NArabic_Hiero
 {
     private $_language = 'Hiero';
 

@@ -16,7 +16,7 @@
  * Example of Spell numbers in the Arabic idiom
  *
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -28,7 +28,7 @@ error_reporting(E_STRICT);
 $time_start = microtime(true);
 
 require '../../Arabic.php';
-$Arabic = new I18N_Arabic('Numbers');
+$Arabic = new I18NArabic('Numbers');
 
 $Arabic->setFeminine(1);
 $Arabic->setFormat(1);
@@ -47,7 +47,7 @@ echo "<center>$integer<br />$text</center>";
 $code = <<< END
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Numbers');
+    \$Arabic = new I18NArabic('Numbers');
 
     \$Arabic->setFeminine(1);
     \$Arabic->setFormat(1);
@@ -84,7 +84,7 @@ highlight_string($code);
 $code = <<< END
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Numbers');
+    \$Arabic = new I18NArabic('Numbers');
 
     \$Arabic->setFeminine(2);
     \$Arabic->setFormat(2);
@@ -121,7 +121,7 @@ highlight_string($code);
 $code = <<< END
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Numbers');
+    \$Arabic = new I18NArabic('Numbers');
     
     \$Arabic->setFeminine(2);
     \$Arabic->setFormat(2);
@@ -156,7 +156,7 @@ highlight_string($code);
 $code = <<< END
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Numbers');
+    \$Arabic = new I18NArabic('Numbers');
     
     \$number = 24.7;
     \$text   = \$Arabic->money2str(\$number, 'KWD', 'ar');
@@ -185,7 +185,7 @@ highlight_string($code);
 $code = <<< END
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Numbers');
+    \$Arabic = new I18NArabic('Numbers');
     
     \$text1 = '1975/8/2 9:43 صباحا';
     \$text2 = \$Arabic->int2indic(\$text1);
@@ -219,7 +219,7 @@ highlight_string($code);
 $code = <<< END
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Numbers');
+    \$Arabic = new I18NArabic('Numbers');
     
     \$Arabic->setFeminine(2);
     \$Arabic->setFormat(2);
@@ -254,7 +254,7 @@ highlight_string($code);
 $code = <<< END
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Numbers');
+    \$Arabic = new I18NArabic('Numbers');
     
     \$string  = 'مليار و مئتين و خمسة و ستين مليون و ثلاثمئة و ثمانية و خمسين ألف و تسعمئة و تسعة و سبعين';
 
@@ -280,7 +280,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18N_Arabic/_Arabic---Numbers.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/I18NArabic/_Arabic---Numbers.php.html" target="_blank">Related Class Documentation</a>
 
 </div>
 

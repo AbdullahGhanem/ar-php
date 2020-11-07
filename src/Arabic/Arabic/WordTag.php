@@ -74,7 +74,7 @@
  * Example:
  * <code>
  *     include('./I18N/Arabic.php');
- *     $obj = new I18N_Arabic('WordTag');
+ *     $obj = new I18NArabic('WordTag');
  * 
  *     $hStr=$obj->highlightText($str,'#80B020');
  * 
@@ -96,7 +96,7 @@
  * </code>
  *    
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
@@ -119,14 +119,14 @@
  * This PHP class to tagging Arabic Word
  *  
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
  * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
  * @link      http://www.ar-php.org 
  */ 
-class I18N_Arabic_WordTag
+class I18NArabic_WordTag
 {
     private static $_particlePreNouns    = array('عن', 'في', 'مذ', 'منذ', 'من', 
                                                   'الى', 'على', 'حتى', 'الا', 

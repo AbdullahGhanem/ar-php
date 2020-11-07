@@ -1,4 +1,7 @@
-<?php   namespace Johntaa\Arabic;
+<?php   
+
+namespace Johntaa\Arabic;
+
 /**
  * ----------------------------------------------------------------------
  *  
@@ -48,7 +51,7 @@
  *         auto-summarization, and more...
  *          
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Shamaa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Shamaa
  *    
@@ -66,14 +69,14 @@
  * Core PHP and Arabic language class
  *  
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Shamaa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Shamaa
  *    
  * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
  * @link      http://www.ar-php.org
  */  
-class I18N_Arabic
+class I18NArabic
 {
     private $_inputCharset  = 'utf-8';
     private $_outputCharset = 'utf-8';
@@ -157,11 +160,11 @@ class I18N_Arabic
             }
             
             spl_autoload_extensions('.php,.inc,.class');
-            spl_autoload_register('I18N_Arabic::autoload', false);
+            spl_autoload_register('I18NArabic::autoload', false);
         }
         
         if ($this->_useException) {
-            set_error_handler('I18N_Arabic::myErrorHandler');
+            set_error_handler('I18NArabic::myErrorHandler');
         }
         
         if ($library) {
@@ -236,10 +239,10 @@ class I18N_Arabic
         }
 
         $this->myFile  = $library;
-        //$this->myClass = 'I18N_Arabic_' . $library; Nasser
-       // $class         = 'I18N_Arabic_' . $library; Nasser
-        $this->myClass = '\Johntaa\Arabic\Arabic\I18N_Arabic_' . $library ;
-        $class         = '\Johntaa\Arabic\Arabic\I18N_Arabic_' . $library;
+        //$this->myClass = 'I18NArabic_' . $library; Nasser
+       // $class         = 'I18NArabic_' . $library; Nasser
+        $this->myClass = '\Johntaa\Arabic\Arabic\I18NArabic_' . $library ;
+        $class         = '\Johntaa\Arabic\Arabic\I18NArabic_' . $library;
 
         if (!$this->_useAutoload) {
 			 
@@ -420,7 +423,7 @@ class I18N_Arabic
             if ($convStr == '' && $str != '') {
                 include self::getClassFile('CharsetC');
 
-                $c = I18N_Arabic_CharsetC::singleton();
+                $c = I18NArabic_CharsetC::singleton();
                 
                 if ($inputCharset == 'cp1256') {
                     $convStr = $c->win2utf($str);
@@ -584,7 +587,7 @@ class I18N_Arabic
  * Arabic Exception class defined by extending the built-in Exception class.
  *  
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Shamaa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Shamaa
  *    

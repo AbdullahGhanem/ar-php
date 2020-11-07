@@ -57,7 +57,7 @@
  *     echo '<br /><br />';
  * 
  *     include('./I18N/Arabic.php');
- *     $obj = new I18N_Arabic('StrToTime');
+ *     $obj = new I18NArabic('StrToTime');
  * 
  *     $int  = $obj->strtotime($str, $time);
  *     $date = date('l dS F Y', $int);
@@ -67,7 +67,7 @@
  * </code>
  *          
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
@@ -91,14 +91,14 @@
  * Unix timestamp
  *  
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
  * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
  * @link      http://www.ar-php.org 
  */ 
-class I18N_Arabic_StrToTime
+class I18NArabic_StrToTime
 {
     private static $_hj = array();
 
@@ -145,7 +145,7 @@ class I18N_Arabic_StrToTime
                 preg_match('/.*(\d{1,2}).*(\d{4}).*/', $text, $matches);
 
                 include dirname(__FILE__).'/Mktime.php';
-                $temp = new I18N_Arabic_Mktime();
+                $temp = new I18NArabic_Mktime();
                 $fix  = $temp->mktimeCorrection($i+1, $matches[2]); 
                 $int  = $temp->mktime(0, 0, 0, $i+1, $matches[1], $matches[2], $fix);
                 $temp = null;

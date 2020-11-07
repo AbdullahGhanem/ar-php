@@ -16,7 +16,7 @@
  * Example of Arabic Soundex Class
  *
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -28,7 +28,7 @@ error_reporting(E_STRICT);
 $time_start = microtime(true);
 
 require '../../Arabic.php';
-$Arabic = new I18N_Arabic('Soundex');
+$Arabic = new I18NArabic('Soundex');
 
 $Clinton = array('كلينتون', 'كلينتن', 'كلينطون', 'كلنتن', 'كلنتون', 
                  'كلاينتون');
@@ -113,7 +113,7 @@ echo '<tr>
 $code = <<< ENDALL
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Soundex');
+    \$Arabic = new I18NArabic('Soundex');
     
     \$Clinton = array('كلينتون', 'كلينتن', 'كلينطون', 'كلنتن', 'كلنتون', 'كلاينتون');
 
@@ -207,7 +207,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18N_Arabic/_Arabic---Soundex.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/I18NArabic/_Arabic---Soundex.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </center>
 </body>

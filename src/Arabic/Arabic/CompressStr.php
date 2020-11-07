@@ -70,7 +70,7 @@
  * Example:
  * <code>
  * include('./I18N/Arabic.php');
- * $obj = new I18N_Arabic('CompressStr');
+ * $obj = new I18NArabic('CompressStr');
  * 
  * $obj->setInputCharset('windows-1256');
  * $obj->setOutputCharset('windows-1256');
@@ -105,7 +105,7 @@
  * </code>
  *                
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
@@ -128,14 +128,14 @@
  * This PHP class compress Arabic string using Huffman-like coding
  *  
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
  * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
  * @link      http://www.ar-php.org 
  */ 
-class I18N_Arabic_CompressStr
+class I18NArabic_CompressStr
 {
     private static $_encode;
     private static $_binary;

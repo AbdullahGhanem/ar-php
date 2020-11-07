@@ -62,7 +62,7 @@
  * Example:
  * <code>
  *     include('./I18N/Arabic.php');
- *     $obj = new I18N_Arabic('KeySwap');
+ *     $obj = new I18NArabic('KeySwap');
  * 
  *     $str = "Hpf lk hgkhs hglj'vtdkK Hpf hg`dk dldg,k f;gdjil Ygn ,p]hkdm ...";
  * 
@@ -74,7 +74,7 @@
  * </code>                  
  *
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
@@ -97,14 +97,14 @@
  * This PHP class convert keyboard language programmatically (English - Arabic)
  *  
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
  * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
  * @link      http://www.ar-php.org 
  */ 
-class I18N_Arabic_KeySwap
+class I18NArabic_KeySwap
 {
     // First 12 chars replaced by 1 Byte in Arabic keyboard 
     // while rest replaced by 2 Bytes UTF8

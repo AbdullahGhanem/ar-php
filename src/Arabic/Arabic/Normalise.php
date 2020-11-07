@@ -53,7 +53,7 @@
  * Example:
  * <code>
  *     include('./I18N/Arabic.php');
- *     $obj = new I18N_Arabic('Normalise');
+ *     $obj = new I18NArabic('Normalise');
  * 
  *     $str = "Arabic text with tatweel, tashkeel...";
  * 
@@ -65,7 +65,7 @@
  * </code>                  
  *
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Djihed Afifi <djihed@gmail.com>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
@@ -94,14 +94,14 @@
  *  functions.
  *  
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Djihed Afifi <djihed@gmail.com>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
  * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
  * @link      http://www.ar-php.org 
  */ 
-class I18N_Arabic_Normalise
+class I18NArabic_Normalise
 {
     private $_unshapeMap    = array();
     private $_unshapeKeys   = array();

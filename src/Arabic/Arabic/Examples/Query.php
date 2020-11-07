@@ -3,7 +3,7 @@
  * Example of Arabic Query Class
  *
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -62,7 +62,7 @@ $time_start = microtime(true);
         </tr>
     <?php
     include '../../Arabic.php';
-    $Arabic = new I18N_Arabic('Query');
+    $Arabic = new I18NArabic('Query');
     echo $Arabic->allForms('فلسطينيون');
         
     $dbuser = 'root';
@@ -127,7 +127,7 @@ $time_start = microtime(true);
 $code = <<< END
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Query');
+    \$Arabic = new I18NArabic('Query');
     echo \$Arabic->allForms('فلسطينيون');
         
     \$dbuser = 'root';
@@ -194,7 +194,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18N_Arabic/_Arabic---Query.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/I18NArabic/_Arabic---Query.php.html" target="_blank">Related Class Documentation</a>
 
 </div>
 </body>

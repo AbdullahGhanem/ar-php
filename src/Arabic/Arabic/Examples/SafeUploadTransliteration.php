@@ -17,7 +17,7 @@
  * Example of Safe Upload Examples for Arabic Filename
  *
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -28,7 +28,7 @@
 if (isset($_POST['submit'])) {
 
     include '../../Arabic.php';
-    $Arabic = new I18N_Arabic('Transliteration');
+    $Arabic = new I18NArabic('Transliteration');
     
     // Continue only if the file was uploaded via HTTP POST
     if (is_uploaded_file($_FILES['image']['tmp_name'])) {
@@ -90,7 +90,7 @@ $code = <<< END
 if(isset(\$_POST['submit'])){
 
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Transliteration');
+    \$Arabic = new I18NArabic('Transliteration');
     
     // Continue only if the file was uploaded via HTTP POST
     if (is_uploaded_file(\$_FILES['image']['tmp_name'])) {

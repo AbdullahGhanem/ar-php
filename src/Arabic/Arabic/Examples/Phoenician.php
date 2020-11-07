@@ -3,7 +3,7 @@
  * Example of render Phoenician language transliteration
  *
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -16,7 +16,7 @@ error_reporting(E_STRICT);
 (!empty($_GET['w'])) ? $word = $_GET['w'] : $word='خالد الشمعة';
 
 require '../../Arabic.php';
-$x = new I18N_Arabic('Hiero');
+$x = new I18NArabic('Hiero');
 
 $x->setLanguage('Phoenician');
 $im = $x->str2graph($word, 'rtl', 'ar');

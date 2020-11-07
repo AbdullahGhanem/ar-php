@@ -80,7 +80,7 @@
  *     date_default_timezone_set('UTC');
  *     
  *     include('./I18N/Arabic.php');
- *     $obj = new I18N_Arabic('Salat');
+ *     $obj = new I18NArabic('Salat');
  * 
  *     $obj->setLocation(33.513,36.292,2);
  *     $obj->setDate(date('j'), date('n'), date('Y'));
@@ -138,7 +138,7 @@
  *     date_default_timezone_set('UTC');
  *     
  *     include('./I18N/Arabic.php');
- *     $obj = new I18N_Arabic('Salat');
+ *     $obj = new I18NArabic('Salat');
  * 
  *     $obj->setLocation(33.513,36.292,2);
  *
@@ -147,7 +147,7 @@
  * </code>
  *  
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
@@ -171,14 +171,14 @@
  * location.
  *  
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
  * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
  * @link      http://www.ar-php.org 
  */ 
-class I18N_Arabic_Salat
+class I18NArabic_Salat
 {
     /**
      * السنة

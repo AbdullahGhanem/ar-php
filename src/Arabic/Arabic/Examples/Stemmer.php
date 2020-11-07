@@ -16,7 +16,7 @@
  * Example of Arabic Stemmer
  *
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -28,7 +28,7 @@ error_reporting(E_STRICT);
 $time_start = microtime(true);
 
 require '../../Arabic.php';
-$Arabic = new I18N_Arabic('Stemmer');
+$Arabic = new I18NArabic('Stemmer');
 
 $examples = array();
 $examples[] = 'سيعرفونها من خلال العمل بالحاسوبين المستعملين لديهما';
@@ -59,7 +59,7 @@ foreach ($examples as $str) {
 $code = <<< END
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Stemmer');
+    \$Arabic = new I18NArabic('Stemmer');
     
     \$examples = array();
     \$examples[] = 'سيعرفونها من خلال العمل بالحاسوبين المستعملين لديهما';
@@ -101,7 +101,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18N_Arabic/_Arabic---Stemmer.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/I18NArabic/_Arabic---Stemmer.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>

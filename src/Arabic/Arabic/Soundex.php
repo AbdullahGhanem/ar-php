@@ -81,13 +81,13 @@
  * Example:
  * <code>
  *   include('./I18N/Arabic.php');
- *   $obj = new I18N_Arabic('Soundex');
+ *   $obj = new I18NArabic('Soundex');
  *     
  *   $soundex = $obj->soundex($name);
  * </code>   
  *    
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
@@ -110,14 +110,14 @@
  * This PHP class implement Arabic soundex algorithm
  *  
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
  * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
  * @link      http://www.ar-php.org 
  */ 
-class I18N_Arabic_Soundex
+class I18NArabic_Soundex
 {
     private $_asoundexCode    = array();
     private $_aphonixCode     = array();

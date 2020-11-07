@@ -3,7 +3,7 @@
  * A map of Arabic characters in the ISO 8859-6 charset
  *
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2011 Khaled Al-Sham'aa
  *

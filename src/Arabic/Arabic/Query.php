@@ -114,7 +114,7 @@
  * Example:
  * <code>
  *     include('./I18N/Arabic.php');
- *     $obj = new I18N_Arabic('Query');
+ *     $obj = new I18NArabic('Query');
  *     
  *     $dbuser = 'root';
  *     $dbpwd = '';
@@ -163,7 +163,7 @@
  * </code>            
  * 
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
@@ -187,14 +187,14 @@
  * Arabic lexical  rules
  *  
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
  * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
  * @link      http://www.ar-php.org 
  */ 
-class I18N_Arabic_Query
+class I18NArabic_Query
 {
     private $_fields          = array();
     private $_lexPatterns     = array();

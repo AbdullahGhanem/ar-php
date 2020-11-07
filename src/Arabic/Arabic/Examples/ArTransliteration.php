@@ -16,7 +16,7 @@
  * Example of English-Arabic Transliteration
  *
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -28,7 +28,7 @@ error_reporting(E_STRICT);
 $time_start = microtime(true);
 
 require '../../Arabic.php';
-$Arabic = new I18N_Arabic('Transliteration');
+$Arabic = new I18NArabic('Transliteration');
 
 $en_terms = array('George Bush, Paul Wolfowitz', 'Silvio Berlusconi?',
     'Guantanamo', 'Arizona', 'Maryland', 'Oracle', 'Yahoo', 'Google',
@@ -76,7 +76,7 @@ echo '</table></center>';
 $code = <<< ENDALL
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Transliteration');
+    \$Arabic = new I18NArabic('Transliteration');
 
     \$en_terms = array('George Bush, Paul Wolfowitz', 'Silvio Berlusconi?',
         'Guantanamo', 'Arizona', 'Maryland', 'Oracle', 'Yahoo', 'Google',
@@ -136,7 +136,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18N_Arabic/_Arabic---Transliteration.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/I18NArabic/_Arabic---Transliteration.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>

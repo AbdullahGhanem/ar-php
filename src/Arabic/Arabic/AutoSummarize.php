@@ -91,7 +91,7 @@
  * Example:
  * <code>
  * include('./I18N/Arabic.php');
- * $obj = new I18N_Arabic('AutoSummarize');
+ * $obj = new I18NArabic('AutoSummarize');
  * 
  * $file = 'Examples/Articles/Ajax.txt';
  * $r = 20;
@@ -120,7 +120,7 @@
  * </code>
  *             
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
@@ -145,14 +145,14 @@
  * mini-summary for a long Arabic document
  *  
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
  * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
  * @link      http://www.ar-php.org 
  */ 
-class I18N_Arabic_AutoSummarize
+class I18NArabic_AutoSummarize
 {
     private $_normalizeAlef       = array('أ','إ','آ');
     private $_normalizeDiacritics = array('َ','ً','ُ','ٌ','ِ','ٍ','ْ','ّ');

@@ -16,7 +16,7 @@
  * Example of Muslim Prayer Times
  *
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -30,7 +30,7 @@ $time_start = microtime(true);
 date_default_timezone_set('UTC');
 
 require '../../Arabic.php';
-$Arabic = new I18N_Arabic('Salat');
+$Arabic = new I18NArabic('Salat');
 
 // Latitude, Longitude, Zone, and Elevation
 $Arabic->setLocation(33.52, 36.31, 3, 691);
@@ -78,7 +78,7 @@ $code = <<< END
     date_default_timezone_set('UTC');
     
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Salat');
+    \$Arabic = new I18NArabic('Salat');
 
     // Latitude, Longitude, Zone, and Elevation
     \$Arabic->setLocation(33.52, 36.31, 3, 691);
@@ -134,7 +134,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18N_Arabic/_Arabic---Salat.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/I18NArabic/_Arabic---Salat.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>

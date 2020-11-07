@@ -67,14 +67,14 @@
  * Example:
  * <code>
  *   include('./I18N/Arabic.php');
- *   $obj = new I18N_Arabic('Transliteration');
+ *   $obj = new I18NArabic('Transliteration');
  *     
  *   $ar_word_1 = $obj->en2ar($en_word_1);
  *   $en_word_2 = $obj->ar2en($ar_word_2);
  * </code>
  *             
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
@@ -97,14 +97,14 @@
  * This PHP class transliterate English words into Arabic
  *  
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
  * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
  * @link      http://www.ar-php.org 
  */ 
-class I18N_Arabic_Transliteration
+class I18NArabic_Transliteration
 {
     private static $_arFinePatterns     = array("/'+/u", "/([\- ])'/u", '/(.)#/u');
     private static $_arFineReplacements = array("'", '\\1', "\\1'\\1");

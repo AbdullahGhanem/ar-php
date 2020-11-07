@@ -3,7 +3,7 @@
  * Example of Arabic Charset Converter
  *
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -17,7 +17,7 @@ $time_start = microtime(true);
 $text = 'بسم الله الرحمن الرحيم';
 
 require '../../Arabic.php';
-$Arabic = new I18N_Arabic('CharsetC');
+$Arabic = new I18NArabic('CharsetC');
 
 $Arabic->setInputCharset('utf-8');
 if (isset($_GET['charset'])) {
@@ -62,7 +62,7 @@ $code = <<< END
     \$text = 'بسم الله الرحمن الرحيم';
 
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('CharsetC');
+    \$Arabic = new I18NArabic('CharsetC');
     
     \$Arabic->setInputCharset('utf-8');
     if (isset(\$_GET['charset'])) {
@@ -92,7 +92,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18N_Arabic/_Arabic---CharsetC.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/I18NArabic/_Arabic---CharsetC.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>

@@ -16,7 +16,7 @@
  * Example of Arabic Text ArStandard
  *
  * @category  I18N
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *
@@ -28,7 +28,7 @@ error_reporting(E_STRICT);
 $time_start = microtime(true);
 
 require '../../Arabic.php';
-$Arabic = new I18N_Arabic('Standard');
+$Arabic = new I18NArabic('Standard');
 
 $content = <<<END
 هذا نص عربي ، و فيه علامات ترقيم بحاجة إلى ضبط و معايرة !و كذلك نصوص( بين 
@@ -56,7 +56,7 @@ END;
 $code = <<< ENDALL
 <?php
     require '../../Arabic.php';
-    \$Arabic = new I18N_Arabic('Standard');
+    \$Arabic = new I18NArabic('Standard');
     
     \$content = <<<END
 هذا نص عربي ، و فيه علامات ترقيم بحاجة إلى ضبط و معايرة !و كذلك نصوص( بين 
@@ -94,7 +94,7 @@ foreach ($included_files as $filename) {
 
 echo '</ul>';
 ?>
-<a href="../Docs/I18N_Arabic/_Arabic---Standard.php.html" target="_blank">Related Class Documentation</a>
+<a href="../Docs/I18NArabic/_Arabic---Standard.php.html" target="_blank">Related Class Documentation</a>
 </div>
 </body>
 </html>

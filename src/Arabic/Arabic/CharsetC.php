@@ -48,7 +48,7 @@
  * Example:
  * <code>
  *   include('./I18N/Arabic.php');
- *   $obj = new I18N_Arabic('CharsetC');
+ *   $obj = new I18NArabic('CharsetC');
  *
  *   $obj->setInputCharset('windows-1256');
  *   $obj->setOutputCharset('utf-8');
@@ -59,7 +59,7 @@
  * </code>
  *
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
@@ -83,14 +83,14 @@
  * one Arabic character set to another
  *  
  * @category  I18N 
- * @package   I18N_Arabic
+ * @package   I18NArabic
  * @author    Khaled Al-Sham'aa <khaled@ar-php.org>
  * @copyright 2006-2013 Khaled Al-Sham'aa
  *    
  * @license   LGPL <http://www.gnu.org/licenses/lgpl.txt>
  * @link      http://www.ar-php.org 
  */ 
-class I18N_Arabic_CharsetC
+class I18NArabic_CharsetC
 {
     private $_utfStr  = '';
     private $_winStr  = '';
