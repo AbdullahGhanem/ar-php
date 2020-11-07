@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'db47c69e30469530d6c8fbe836f1c99d17f86819',
+    'reference' => '1d70aefea7aea8583d4868ff447105024ac251c7',
     'name' => 'johntaa/ar-php',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'db47c69e30469530d6c8fbe836f1c99d17f86819',
+      'reference' => '1d70aefea7aea8583d4868ff447105024ac251c7',
     ),
   ),
 );
