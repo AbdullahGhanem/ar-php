@@ -1,6 +1,6 @@
 <?php   
 
-namespace Johntaa\Arabic;
+namespace Johntaa;
 
 /**
  * ----------------------------------------------------------------------
@@ -241,8 +241,8 @@ class I18NArabic
         $this->myFile  = $library;
         //$this->myClass = 'I18NArabic_' . $library; Nasser
        // $class         = 'I18NArabic_' . $library; Nasser
-        $this->myClass = '\Johntaa\Arabic\Arabic\I18NArabic_' . $library ;
-        $class         = '\Johntaa\Arabic\Arabic\I18NArabic_' . $library;
+        $this->myClass = '\Johntaa\Arabic\I18NArabic_' . $library ;
+        $class         = '\Johntaa\Arabic\I18NArabic_' . $library;
 
         if (!$this->_useAutoload) {
 			 
